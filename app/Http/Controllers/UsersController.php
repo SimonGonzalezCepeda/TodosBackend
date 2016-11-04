@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Transformers\TaskTransformer;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class TasksController extends Controller
+class UsersController extends Controller
 {
 
-    public function __construct(TaskTransformer $transformer)
+    public function __construct(UserTransformer $transformer)
     {
         parent::__construct($transformer);
     }
+
     /**
      * Display a listing of the resource.
      *
@@ -21,7 +21,7 @@ class TasksController extends Controller
      */
     public function index()
     {
-        //return $Task
+        //
     }
 
     /**
@@ -42,7 +42,7 @@ class TasksController extends Controller
      */
     public function store(Request $request)
     {
-        Task::create($request->input());
+        //
     }
 
     /**
@@ -53,7 +53,8 @@ class TasksController extends Controller
      */
     public function show($id)
     {
-        return Task::findOrFail($id);    }
+        //
+    }
 
     /**
      * Show the form for editing the specified resource.
