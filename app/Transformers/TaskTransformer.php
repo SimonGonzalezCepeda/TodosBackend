@@ -7,6 +7,11 @@ use App\Transformers\Contracts\Transformer;
 
 class TaskTransformer implements Transformer
 {
+    /**
+     * @param $resources
+     * @return array
+     * @throws IncorrectModelException
+     */
     public function transform($resources)
     {
         if (! $resources instanceof \App\Task){
