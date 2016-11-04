@@ -9,13 +9,24 @@ use App\Http\Requests;
 class UsersTasksController extends Controller
 {
     /**
+     * UsersTasksController constructor.
+     * @param TaskTransformer $transformer
+     */
+    public function __construct(TaskTransformer $transformer)
+    {
+        parent::__construct($transformer);
+    }
+
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
-        //
+        $user = User::findOrFail($id);
+
+
     }
 
     /**

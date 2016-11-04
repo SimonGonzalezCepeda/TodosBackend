@@ -10,6 +10,10 @@ use App\Http\Requests;
 class TasksController extends Controller
 {
 
+    /**
+     * TasksController constructor.
+     * @param TaskTransformer $transformer
+     */
     public function __construct(TaskTransformer $transformer)
     {
         parent::__construct($transformer);
