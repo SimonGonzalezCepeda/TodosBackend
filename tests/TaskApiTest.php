@@ -1,12 +1,9 @@
 <?php
 
-use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class TaskApiTest extends TestCase
 {
-
     private $URI = '/api/task';
 
     use DatabaseMigrations;
@@ -18,7 +15,7 @@ class TaskApiTest extends TestCase
      */
     public function testShowAllTasks()
     {
-    $this->json('GET', $this->URI)
+        $this->json('GET', $this->URI)
         ->dump();
 //        ->seeJson();
     }
@@ -29,9 +26,9 @@ class TaskApiTest extends TestCase
     public function testShadowOneTask()
     {
         $task = factory(App\Task::class)->create();
-        $this->json('GET', $this->URI . '/' . id)
+        $this->json('GET', $this->URI.'/'.id)
                 ->seeJsonStructure([
-                    "id","name","done","priority"
+                    'id', 'name', 'done', 'priority',
                 ]);
 //                ->seeJsonContains([
 //                   "name" => $task->name,
@@ -41,5 +38,4 @@ class TaskApiTest extends TestCase
 //            ->dump();
 //            ->seeJson();
     }
-
 }
