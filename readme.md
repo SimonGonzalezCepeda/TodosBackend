@@ -8,7 +8,7 @@ We use Laravel, so you can go there.
 
 ## Badges
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/acacha/llum/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/SimonGonzalezCepeda/TodosBackend/)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/SimonGonzalezCepeda/TodosBackend/)](https://scrutinizer-ci.com/g/SimonGonzalezCepeda/TodosBackend/)
 
 ## License
 
