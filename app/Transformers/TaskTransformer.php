@@ -9,18 +9,21 @@ class TaskTransformer implements Transformer
 {
     /**
      * @param $resources
-     * @return array
+     *
      * @throws IncorrectModelException
+     *
+     * @return array
      */
     public function transform($resources)
     {
-        if (! $resources instanceof \App\Task){
+        if (!$resources instanceof \App\Task) {
             throw new IncorrectModelException();
         }
+
         return [
-            "name" => $resources['name'],
-            "done" => $resources['done'],
-            "priority" => $resources['priority']
+            'name'     => $resources['name'],
+            'done'     => $resources['done'],
+            'priority' => $resources['priority'],
         ];
     }
 }
