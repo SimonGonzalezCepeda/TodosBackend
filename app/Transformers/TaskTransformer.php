@@ -3,15 +3,10 @@
 namespace App\Transformers;
 
 use App\Exceptions\IncorrectModelException;
-use App\Transformers\Contracts\Transformer;
 
-class TaskTransformer implements Transformer
+class TaskTransformer extends Transformer
 {
-    /**
-     * @param $resources
-     * @return array
-     * @throws IncorrectModelException
-     */
+
     public function transform($resources)
     {
         if (! $resources instanceof \App\Task){
