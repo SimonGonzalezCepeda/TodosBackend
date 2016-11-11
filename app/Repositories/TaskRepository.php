@@ -1,12 +1,14 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: sylver
- * Date: 11/11/16
- * Time: 16:21
- */
-class TaskRepository
+namespace App\Repositories;
+
+use App\Repositories\Contracts\Repository;
+
+class TaskRepository implements Repository
 {
 
+    public function find($id, $columns = array('*'))
+    {
+        return Task::findOrFail($id);
+    }
 }
