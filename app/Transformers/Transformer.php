@@ -8,7 +8,7 @@
 
 namespace App\Transformers;
 
-use App\Transformers\Contracts as ContractTransformer;
+use App\Transformers\Contracts\Transformer as ContractTransformer;
 
 abstract class Transformer implements ContractTransformer
 {
@@ -16,7 +16,7 @@ abstract class Transformer implements ContractTransformer
      * @param $resources
      * @return array
      */
-    protected function transformCollection($resources){
+    public function transformCollection($resources){
         //Colection Laravel collections
         return array_map(function($resources){
             return $this->transformer->transform($resources);

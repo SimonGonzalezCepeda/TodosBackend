@@ -1,8 +1,11 @@
 <template>
     <div>
-        <header-component/>
-        <div>this is template body</div>
-        <other-component/>
+        <p v-show="seen">{{message}}<p>
+        <input type="text" v-model="message">
+        <buttom v-on:click="reverseMessage">Reverse</buttom>
+        <ol>
+            <li v-for="todo in todos">@{{ {todo.name }} | @{{todo.priority}} | @{{ todo.done }}</li>
+        </ol>
     </div>
 </template>
 <style>
@@ -11,17 +14,29 @@
     }
 </style>
 <script>
-    import HeaderComponent from './components/header.vue'
-    import OtherComponent from './components/other.vue'
     export default{
-        data(){
-            return{
-                msg:'hello vue'
+        data() {
+            return {
+                message: 'Hola que tal',
+                seen: false,
+                todos: [],
             }
         },
-        components:{
-            'other-component':OtherComponent,
-            HeaderComponent,
+        created(){
+            console.log('Component todos created.');
+            this.fetchData();
+        },
+        methods: {
+            reversedMessage: function(){
+
+            }
+
         }
-    }
+
+    };
 </script>
+
+<!--data: {-->
+<!--message: 'Hello Vue Que tal!',-->
+
+<!--}-->
