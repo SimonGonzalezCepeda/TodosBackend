@@ -25,16 +25,21 @@
         margin-right: 30px;
         margin-bottom: 20px;
     }
+
+    .clearfix{
+        overflow: auto;
+    }
 </style>
 
 <body>
 
-<h1>Simple Float Example</h1>
+<div class="clearfix">
+    <h1>Simple Float Example</h1>
+    <img src="http://lorempixel.com/400/200/food" alt="Imatge Lorem">
+    <p>Lorem ipsum </p>
+</div>
 
-<img src="http://lorempixel.com/400/200/food" alt="Imatge Lorem">
-
-<p>Lorem ipsum </p>
-<h3>Prova</h3>
+<h3 >Prova</h3>
 
 </body>
 </html>
