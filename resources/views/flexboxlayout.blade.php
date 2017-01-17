@@ -10,20 +10,42 @@
 
 <style>
 
+    .container{
+        display: flex;
+        overflow: hidden;
+    }
+
+    .header{
+        background: indianred;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .article{
+        background: cornflowerblue;
+        padding: 10px;
+        margin: 10px;
+    }
 </style>
 
 <body>
 
-<div class="heade">Sample flexbox example</div>
 
-<div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+<div class="header">Sample flexbox example</div>
 
-<div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+<div class="container">
 
-<div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+    <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
 
-<div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+    <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
 
-<div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+    <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+
+    <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+
+    <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+
+</div>
+
 </body>
 </html>
