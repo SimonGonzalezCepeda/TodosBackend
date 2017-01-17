@@ -28,3 +28,7 @@ Route::get('/boxmodel', function () {
 Route::get('/floatmodel', function () {
     return view('floatmodel');
 });
+
+Route::get('/layoutfloat', function () {
+    return view('layoutfloat');
+});
