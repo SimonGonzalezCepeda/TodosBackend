@@ -32,6 +32,7 @@
     }
 
     section.articles > article{
+        flex: 1;
         margin: 20px 10px;
     }
 
