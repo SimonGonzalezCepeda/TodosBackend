@@ -32,3 +32,7 @@ Route::get('/floatmodel', function () {
 Route::get('/layoutfloat', function () {
     return view('layoutfloat');
 });
+
+Route::get('/csstables', function () {
+    return view('csstables');
+});
