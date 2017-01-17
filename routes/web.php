@@ -40,3 +40,7 @@ Route::get('/csstables', function () {
 Route::get('/flexboxlayout', function () {
     return view('flexboxlayout');
 });
+
+Route::get('/bootstraplayout', function () {
+    return view('bootstraplayout');
+});
