@@ -12,40 +12,81 @@
 
     .container{
         display: flex;
-        overflow: hidden;
     }
 
-    .header{
+    nav{
         background: indianred;
         padding: 10px;
-        margin: 10px;
+        flex: 1;
+        -moz-box-flex: 1;
+        -webkit-box-flex: 1;
     }
 
-    .article{
+    section.articles{
         background: cornflowerblue;
         padding: 10px;
-        margin: 10px;
+        flex: 8;
+    }
+
+    section.articles > .article{
+        flex-direction: column;
+        flex:1;
+        margin: 20px 0;
+    }
+
+    footer{
+        position: fixed;
+        bottom:0px;
+        background: forestgreen;
+        width:100%;
+        height: auto;
+        min-height: 50px;
     }
 </style>
 
 <body>
 
 
-<div class="header">Sample flexbox example</div>
-
 <div class="container">
 
-    <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+    <nav class="debug">
+        <ul>
+            <li>link1</li>
+            <li>Link2</li>
+            <li>Link3</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </nav>
 
-    <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+    <section class="articles">
+        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
 
-    <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
 
-    <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
 
-    <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
 
+        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+
+        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+
+        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+
+        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+
+        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+
+        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+    </section>
+
+
+    <footer>
+        @copyright Acacha Inc. asdas dasd asd
+    </footer>
 </div>
+
 
 </body>
 </html>
