@@ -28,10 +28,14 @@
         flex: 8;
     }
 
-    section.articles > .article{
+    section.articles > article{
         flex-direction: column;
         flex:1;
         margin: 20px 0;
+    }
+
+    section.articles > article:first-child{
+        margin-top: 10px;
     }
 
     footer{
@@ -42,12 +46,24 @@
         height: auto;
         min-height: 50px;
     }
+
+    header{
+        background: black;
+        color: white;
+        width: 100%;
+        height: auto;
+        padding: 30px auto;
+        text-align: center;
+    }
 </style>
 
 <body>
 
+<header>
+    <h1>Heather here!</h1>
+</header>
 
-<div class="container">
+<section class="container">
 
     <nav class="debug">
         <ul>
@@ -60,32 +76,33 @@
     </nav>
 
     <section class="articles">
-        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
 
-        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</article>
 
-        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</article>
 
-        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</article>
 
-        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</article>
 
-        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</article>
 
-        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</article>
 
-        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</article>
 
-        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</article>
 
-        <div class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</div>
+        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</article>
+
+        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquam dicta, doloremque doloribus fugiat id, minima officiis provident, quam quas quia quisquam saepe sapiente sit vel vero? Voluptate, voluptatum.</article>
     </section>
 
 
     <footer>
         @copyright Acacha Inc. asdas dasd asd
     </footer>
-</div>
+</section>
 
 
 </body>
