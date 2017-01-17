@@ -12,6 +12,7 @@
 
     .container{
         display: flex;
+        flex-direction: row;
     }
 
     nav{
@@ -26,12 +27,12 @@
         background: cornflowerblue;
         padding: 10px;
         flex: 8;
+        display: flex;
+        flex-direction: column;
     }
 
     section.articles > article{
-        flex-direction: column;
-        flex:1;
-        margin: 20px 0;
+        margin: 20px 10px;
     }
 
     section.articles > article:first-child{
@@ -52,9 +53,14 @@
         color: white;
         width: 100%;
         height: auto;
-        padding: 30px auto;
         text-align: center;
     }
+
+    header h1{
+        margin: 0;
+        padding: 30px 0;
+    }
+
 </style>
 
 <body>
