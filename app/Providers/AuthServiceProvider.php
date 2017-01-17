@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+use Laravel\Passport\Passport;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -24,6 +26,24 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
+        Passport::routes();
+
+        Passport::enableImplicitGrant();
+
+        $this->defineGates();
+
         //
+    }
+
+    protected function defineGates()
+    {
+        Gate::define('gate-name',function() {
+        });
+        Gate::define('impossible-gate',function() {
+            return false; //No autoritzat
+        });
+        Gate::define('easy-gate',function() {
+            return true; //Autoritzat
+        });
     }
 }
